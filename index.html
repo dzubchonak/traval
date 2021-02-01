@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		.wrapper{
+			width: 1735px;
+			height: 860px;
+		}
+		.items-row{
+			width: 100%;
+			height: 100%;
+			flex-flow: nowrap;
+			display: flex;
+		}
+		.img1{
+			background-image: url("img/frankfurt.jpg");
+			background-position: center;
+		}
+		.img2{
+			background-image: url("img/berlin.jpg");
+			background-position: center;
+		}
+		.img3{
+			background-image: url("img/amsterdam.jpg");
+			background-position: center;
+		}
+		.item{
+			background-repeat: no-repeat;
+			background-size: cover;
+			margin: 2px;
+			border: 2px solid gray;
+			box-sizing: border-box;
+			flex: 1 1 20%;
+			transition: flex 0.4s ease
+		}
+		.item:hover{
+			flex: 0.01 0.01 70%;
+		}
+	</style>
+</head>
+<body>
+<div class="wrapper">
+	<div class="items-row">
+		<div class="item img1"></div>
+		<div class="item img2"></div>
+		<div class="item img3"></div>
+	</div>
+	
+</div>
+</body>
+</html>
